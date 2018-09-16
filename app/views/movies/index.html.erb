@@ -4,6 +4,7 @@
     <ul>
         <% @movies.each do |m| %>
             <li><%= link_to m.title, movie_path(m) %></li>
+            <%= image_tag(m.image, width: "300px") %>
         <% end %>
     </ul>
 </div>
