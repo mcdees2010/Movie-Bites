@@ -6,7 +6,6 @@
 </div>
 </div>
 
-
 <div class="row">
 <div class="col-7">
     <h1><%= @movie.title %>
@@ -20,4 +19,23 @@
 <div>
     <%= image_tag(@movie.image, width: "350px")%>
 </div>
+</div>
+
+<div>
+
+
+<h6>
+<span><%= link_to "add a review", new_movie_review_path(@movie) %></span>
+</h6>
+<table>
+    <tbody>
+        <% @movie.reviews.each do |r| %>
+            <tr>
+                <td><%= r.body %></td>
+                <td><%= r.author %></td>
+                <td><%= link_to "Edit", edit_movie_review_path(@movie, r)%></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
 </div>
