@@ -1,10 +1,8 @@
-<h1>MOVIES</h1>
-
 <div>
     <ul>
         <% @movies.each do |m| %>
-            <li><%= link_to m.title, movie_path(m) %></li>
-            <%= image_tag(m.image, width: "250px") %>
+            <li><%= link_to image_tag(m.image, width: "250px", height: "360", :style => "padding: 20px;"), movie_path(m) %></li>
         <% end %>
     </ul>
 </div>
+

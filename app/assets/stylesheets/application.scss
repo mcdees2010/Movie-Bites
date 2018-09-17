@@ -14,3 +14,29 @@
  *= require_self
  */
  @import "bootstrap";
+
+ ul {
+        list-style-type: none;
+ }
+
+ ul li {
+     float: left;
+ }
+
+ body {
+     background-color: white;
+ }
+
+ nav {
+    font-family: 'Raleway', sans-serif;
+    opacity: 0.6;
+ }
+
+ h1 {
+    font-family: 'Raleway', sans-serif;
+ }
+
+ span {
+     color: black;
+     margin-top: 9px;
+ }
