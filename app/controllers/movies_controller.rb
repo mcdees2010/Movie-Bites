@@ -1,4 +1,7 @@
 class MoviesController < ApplicationController
+    before_action :set_movie, only: [:show, :edit, :update, :destroy]
+    before_action :authorize, except: [:index, :show]
+    
     def index
         @movies = Movie.all
     end
@@ -44,6 +47,11 @@ class MoviesController < ApplicationController
     end
 
     private 
+
+        def set_movie
+        @movie = Movie.find(params[:id])
+        end
+
         def movie_params 
             params.require(:movie).permit(:title, :description, :director, :runtime, :year, :rating, :image)
         end
