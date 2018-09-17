@@ -22,8 +22,21 @@
             </li>
         </ul>
   </div>
-  <form class="form-inline">
+<form class="form-inline">
          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
+<p>
+  <div class="login">
+  <% if current_user %>
+    Welcome, <%= current_user.name %>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
+     <% else %>
+    <%= link_to 'Log In', login_path %>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <%= link_to 'Sign Up', new_user_path %>
+    <% end %>
+  </div>
+</p>
 </nav>
