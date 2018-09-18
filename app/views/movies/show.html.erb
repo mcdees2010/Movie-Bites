@@ -16,14 +16,12 @@
     <h6>Rated: <%= @movie.rating %></h6>
 
 </div>
-<div>
+<div class="imagelocation">
     <%= image_tag(@movie.image, width: "350px")%>
 </div>
 </div>
 
-<div>
-
-
+<div class="reviewarea">
 <h6>
 <span><%= link_to "add a review", new_movie_review_path(@movie) %></span>
 </h6>
@@ -33,7 +31,8 @@
             <tr>
                 <td><%= r.body %></td>
                 <td><%= r.author %></td>
-                <td><%= link_to "Edit", edit_movie_review_path(@movie, r)%></td>
+                <td><%= link_to "Edit", edit_movie_review_path(@movie, r)%> | </td>
+                <td><%= link_to "Delete", movie_review_path(@movie, r), method: :delete, data: { confirm: "are you sure?"} %></td>
             </tr>
         <% end %>
     </tbody>

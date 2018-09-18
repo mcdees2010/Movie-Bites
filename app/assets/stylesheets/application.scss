@@ -16,51 +16,99 @@
  @import "bootstrap";
 
  ul {
-        list-style-type: none;
- }
+    list-style-type: none;
+}
 
- ul li {
-     float: left;
- }
+ul li {
+ float: left;
+}
 
- body {
-     background-color: white;
- }
+body {
+ background-color: white;
+}
 
- nav {
+nav {
     font-family: 'Raleway', sans-serif;
-    opacity: 0.6;
- }
+    color: lightgray; 
+}
 
- h1 {
-    font-family: 'Raleway', sans-serif;
- }
 
- span {
-     color: black;
-     margin-top: 9px;
- }
+h1 {
+font-family: 'Raleway', sans-serif;
+}
 
- p {
-     padding: 15px;
- }
+span {
+ color: black;
+ margin-top: 9px;
+}
+
+p {
+ padding: 15px;
+}
+
+.col-7 {
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.col-4 {
+    padding-left: 55px;
+    padding-top: 40px;
+}
+
+.col-8 {
+    margin-left: 400px;
+}
+.imagelocation {
+    margin-left: 100px;
+}
+
+.reviewarea {
+    padding-left: 45px;
+    padding-top: 20px;
+}
+.spotlight {
+    margin-left: 20px;
+}
+
+.addmovie {
+    margin-top: 30px;
+    margin-left: 1040px;
+}
+
+.allmovies {
+    margin-left: 70px;
+}
+
+.spotlightimages {
+    padding-left: 60px;
+}
+
+.welcome {
+padding: 200px 0 100px 0;
+margin-left: 44px;
+}
 
 .container {
-    margin-left: 35px;
+margin-left: 35px;
+width: 100%;
+padding-right: 0;
+padding-left: 0;
+margin-left: 0;
 }
 .top-wrapper {
-    padding: 190px 0 100px 0;
-    background-image: url(https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/movietheater-screen-seats.jpg);
-    background-size: cover;
-    color: white;
-    text-align: center;
-    height: 600px;
-    width: 1160px;
-  }
-  
+
+background-image: url(https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/movietheater-screen-seats.jpg);
+background-size: cover;
+color: white;
+text-align: center;
+height: 680px;
+width: 1280px;
+}
+
 .top-wrapper h1 {
-    opacity: 0.7;
-    font-size: 45px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-  }
+opacity: 0.7;
+font-size: 45px;
+letter-spacing: 5px;
+margin-bottom: 10px;
+}
