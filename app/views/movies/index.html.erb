@@ -1,7 +1,19 @@
+
+<div class="top-wrapper">
+<div class="container">
+  <h1>WELCOME MOVIE LOVERS.</h1>
+</div>
+</div>
+
+<br />
+
+<h4>Spotlight | Movies of the Month:</h4>
+
 <div>
     <ul>
-        <% @movies.each do |m| %>
-            <li><%= link_to image_tag(m.image, width: "250px", height: "360", :style => "padding: 20px;"), movie_path(m) %></li>
-        <% end %>
+        <li><%= link_to image_tag("https://content.linkedin.com/content/dam/me/learning/blog/2018/april/BlackPantherLogo/Black.Panther.Logo.9.jpeg", width: "250px", :style => "padding: 20px; display: block; margin: auto;"), movie_path(7) %></li>
+        <li><%= link_to image_tag("https://piercingmetal.com/wp-content/uploads/2017/11/Logo-A-Quiet-Place-2018.jpg", width: "250px", :style => "padding: 20px; display: block; margin: auto;"), movie_path(8) %></li>
+        <li><%= link_to image_tag("https://vignette.wikia.nocookie.net/marveldatabase/images/4/45/Avengers_Infinity_War_logo_001.jpg/revision/latest?cb=20160730005358", width: "250px", :style => "padding: 20px; display: block; margin: auto;"), movie_path(9) %></li>
+        <li><%= link_to image_tag("http://s3-us-west-2.amazonaws.com/media-comicbook/2015/08/incredibles2logo-147954.png", width: "250px", :style => "padding: 20px; display: block; margin: auto;"), movie_path(10) %></li>
     </ul>
 </div>

@@ -1,0 +1,11 @@
+<h6>
+<span><%= link_to "add a movie", new_movie_path(@movie) %></span>
+</h6>
+
+<div>
+    <ul>
+        <% @movies.each do |m| %>
+            <li><%= link_to image_tag(m.image, width: "250px", height: "360", :style => "padding: 20px;"), movie_path(m) %></li>
+        <% end %>
+    </ul>
+</div>

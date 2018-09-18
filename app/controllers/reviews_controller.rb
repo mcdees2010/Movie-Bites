@@ -24,10 +24,11 @@ class ReviewsController < ApplicationController
     def update
         @review = Review.find params[:id]
         @movie = Movie.find params[:movie_id]
+        
         if @review.update(review_params)
             redirect_to movie_path(@movie)
         else
-            redirect_to "new"
+            redirect_to "edit"
         end
     end
 
@@ -39,6 +40,7 @@ class ReviewsController < ApplicationController
     end
 
     private
+
         def review_params
             params.require(:review).permit(:body, :author)
         end
