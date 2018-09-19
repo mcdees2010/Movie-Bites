@@ -38,6 +38,15 @@ class MoviesController < ApplicationController
         end
     end
 
+    def search
+        binding.pry  
+        # if params[:search].blank?  
+        #     redirect_to(root_path, alert: "Empty field!") and return  
+        #   else  
+        
+        # end  
+    end
+
     def destroy
         @movie = Movie.find params[:id]
 

@@ -22,10 +22,11 @@
             </li>
         </ul>
   </div>
-<form class="form-inline">
-         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-         <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-  </form>
+<%= form_tag(search_page_path, :method => "get", :class => "form-inline") do %>
+  <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control mr-sm-2" %>
+  <%= button_tag "Submit", :class => "btn btn-outline-secondary my-2 my-sm-0" %>
+<% end %>
+
 <p>
   <div class="login">
   <% if current_user %>
