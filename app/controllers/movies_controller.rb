@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
     before_action :set_movie, only: [:show, :edit, :update, :destroy]
-    before_action :authorize, except: [:index, :show]
+    before_action :authorize, except: [:index]
     
     def index
         @movies = Movie.all
