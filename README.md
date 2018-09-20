@@ -1,24 +1,40 @@
-# README
+# MOVIE BITES
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Description
 
-Things you may want to cover:
+Movie Bites is a movie review/news site.
 
-* Ruby version
+Read the little bites of exciting movie news popping up on a daily basis.
 
-* System dependencies
+You can leave a review on your favorite movie to join in on the movie fun.
 
-* Configuration
+### WEBSITE LINK
 
-* Database creation
+<a href="https://movie-bites.herokuapp.com/">Movie Bites</a>
 
-* Database initialization
+<img src="https://i.imgur.com/O4pjvnq.png">
 
-* How to run the test suite
+<img src="https://i.imgur.com/CaYVFmN.png">
 
-* Services (job queues, cache servers, search engines, etc.)
+<img src="https://i.imgur.com/IeuQTEg.png">
 
-* Deployment instructions
+<img src="https://i.imgur.com/dmWIeuS.png">
 
-* ...
+
+### Technologies Used
+
+-  HTML<br>
+
+- CSS<br>
+
+- SQL
+
+- Ruby
+
+- Ruby on Rails
+
+### ISSUES / NEXT STEPS
+
+- wanting to get an admin to be the only one able to add movies.
+- have the edit and delete buttons only show for your posts, and for an admin.
+
