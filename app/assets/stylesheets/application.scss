@@ -99,10 +99,11 @@ p {
 
 .allmovies {
     margin-left: 70px;
+    min-height: 500px;
 }
 
 .spotlightimages {
-    padding-left: 90px;
+    padding-left: 60px;
 }
 
 .welcome {
@@ -125,7 +126,7 @@ background-size: cover;
 color: white;
 text-align: center;
 height: 680px;
-width: 1280px;
+width: 100vw;
 }
 
 .top-wrapper h1 {
@@ -138,13 +139,18 @@ margin-bottom: 10px;
 .signup {
     margin-top: 200px;
     margin-left: 450px;
+    height: 400px;
 }
 
 .loginposition {
     margin-top: 200px;
     margin-left: 450px;
+    height: 400px;
 }
 
+.spotlights {
+    height: 200px;
+}
 .popcorn img {
     max-width: 25px;
     max-height: 30px;
@@ -160,9 +166,11 @@ footer {
 	font-size: 14px;
 	letter-spacing: .08em;
     font-weight: 500;
-    margin-top: 800px;
-    width: 1280px;
-
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clearfix:after {
@@ -176,12 +184,12 @@ footer {
 
 .message {
     float: left;
-    margin-top: 5px;
+    margin-right: 400px;
 }
 
 .credit {
     float: right;
-    margin-top: 20px;
+    // margin-top: 20px;
     a{
         color: lightgray;
     }
